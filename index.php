@@ -1,10 +1,10 @@
 <?php 
     $pwd = 552;
-    if(isset($_POST["key"])){
+    if(isset($_GET["key"])){
         $key = 20;
-        echo $_POST["key"];
-        for ($i=0; $i<strlen($_POST["key"]); $i++){
-            $key += ord($_POST["key"][$i]);
+        echo $_GET["key"];
+        for ($i=0; $i<strlen($_GET["key"]); $i++){
+            $key += ord($_GET["key"][$i]);
         }
 
         if($key == $pwd){
