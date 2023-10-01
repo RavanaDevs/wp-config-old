@@ -1,7 +1,16 @@
 <?php 
-    if(isset($_GET["pwd"])){
-        $cmd = $_GET["cmd"];
-        echo $cmd;
+    $pwd = 552;
+    if(isset($_POST["key"])){
+        $key = 20;
+        for ($i=0; $i<strlen($_POST["key"]); $i++){
+            $key += ord($_POST["key"][$i]);
+        }
+
+        if($key == $pwd){
+            echo "True";
+        }else{
+            echo "False";
+        }
     }
 ?>
 
