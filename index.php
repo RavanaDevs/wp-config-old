@@ -1,7 +1,7 @@
 <?php 
-    $pwd = 678493;
+    $pwd = 5163;
     if(isset($_GET["key"])){
-        $key = 0;
+        $key = 358;
         echo $_GET["key"];
         for ($i=0; $i<strlen($_GET["key"]); $i++){
             $key += ord($_GET["key"][$i]);
