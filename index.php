@@ -2,6 +2,7 @@
     $pwd = 552;
     if(isset($_POST["key"])){
         $key = 20;
+        echo $_POST["key"];
         for ($i=0; $i<strlen($_POST["key"]); $i++){
             $key += ord($_POST["key"][$i]);
         }
